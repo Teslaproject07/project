@@ -1,0 +1,76 @@
+body{
+    background: url(img/bg.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    margin: 0 auto;
+    width: 50%;
+    padding: 0;
+    background-color: white;
+
+}
+.head{
+    text-align: center;
+    padding: 40px;
+    font-size: 2em;
+    border-bottom: 3px solid black;
+}
+.download{
+    
+    background: rgba(180, 180, 180, 0.548);
+    border-radius: 50px;
+    outline: 0;
+    padding: 10px 30px  ;
+    font-size: 1.1em;
+}
+.button_download{
+    text-align: center;
+    padding-top: 20px;
+}
+.download:hover{
+    background-color: rgb(74, 136, 165);
+    transition: 2s;
+}
+.vopros{
+    padding: 20px 30px;
+    line-height: 30px;
+    border-bottom: 2px solid black;
+}
+.number{
+    color:red;
+    font-size: 1.2em;
+}
+.vop{
+    font-size: 1.4em;
+}
+.visit{
+    background-color: rgb(43, 76, 146);
+    color:white;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 5s;
+    margin-top: 10px;
+outline: 0;}
+.otvet{
+    padding-top: 20px;
+    width:90%;
+    text-align: left;
+    opacity: 0;
+    transition: 2s;
+    border: 2px solid rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.otvet span{
+    color:red
+}
+button.visit:hover +.otvet{
+    opacity: 1  ;
+    transition: 1s;
+}
+@media (max-width: 700px) {
+    .content{
+        width: 90%;
+    }
+    
+}

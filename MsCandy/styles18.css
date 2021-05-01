@@ -1,0 +1,99 @@
+
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+}
+
+header {
+	background: rgb(255,214,94); 
+	background: linear-gradient(to bottom, rgb(100,100,100),rgb(0,0,0));  
+  padding-top: 20px;
+}
+.container {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px 0 30px 0;	
+	text-align: right;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	z-index: 100;
+	left: 0;	
+}
+header h1 {
+	font-size: 2.2em;
+	margin: 0 0 10px 0;
+	color: rgb(255,255,255);
+}
+
+nav {
+	margin-left: 200px;	
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: #ff932d;
+	border-radius: 5px;
+	border: 1px solid #c95e00;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+/* пользовательские стили  */
+nav a:hover{transform: scale(1.5);
+	background-color: red;
+}
+nav a{
+	transition: all .5s, background-color 1s ease-in .5s;
+
+}
+@keyframes logo{
+	from {transform:  rotate(0) scale(.5); left:120%}
+	50% { transform: rotate(-720deg) scale(.5); left:0%}
+	to {transform: rotate(0) scale(1);}
+}
+.logo {
+	animation: logo 3s;
+}
+@keyframes colosr{
+	from {box-shadow: inset 0 0 6px rgb(88, 77, 76);}
+	20% {box-shadow:  inset 0 0 5px blue;}
+	40%{ box-shadow: 0 0 5px 2px green;}
+	60%{ box-shadow: 0 0 5px 56x yellow;}
+	80% {box-shadow: 0 0 5px 5px aqua;}
+	to{box-shadow: 0 0 5px 5px rgb(194, 111, 33);}
+}
+a:hover{
+	animation: colosr 4s;
+}
+@keyframes user {
+	from{ right: 120%;
+
+	
+	}
+	50%{ right:40%}
+	to{ right: 0%;}
+}
+h1 {
+	animation: user 7s;
+}
+
+
+
+
+
+
+
